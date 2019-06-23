@@ -1,0 +1,17 @@
+{
+  "name": "basicexpresswebsite",
+  "version": "1.0.0",
+  "description": "Simple Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj Nafria",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jade": "*",
+    "nodemailer": "*"
+  }
+}

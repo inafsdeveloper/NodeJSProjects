@@ -1,0 +1,14 @@
+{
+  "name": "simplewebserver",
+  "version": "1.0.0",
+  "description": "My Simple Web Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj Nafria",
+  "license": "ISC",
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
+}

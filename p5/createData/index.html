@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> 
+
+    #root{
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: system-ui;
+      transition: visibility 2s, opacity 0.5s linear;
+    }
+    canvas{
+      display: block;
+      margin: 1em auto;
+      box-shadow: 0 0 2em rgba(0,0,0,0.2);
+      border-radius: 1em;
+    }
+    button{
+      display: inline-block;
+      vertical-align: middle;
+      border: 0;
+      padding: .3em .5em;
+      padding-left: 0;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin: 1em .3em;
+      cursor: pointer;
+      border-radius: 1em;
+      background-color: #efefef;
+      transition: .4s ease;
+    }
+    button:before{
+      content: '';
+      float: left;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 1.5em;
+      margin-right: .3em;
+      margin-left: .3em;
+    }
+    button:focus{
+      outline: none !important;
+      box-shadow: 0px 0 1em rgb(0, 99, 234), 0 0 2em #FFF;
+    }
+    button::-moz-focus-inner {
+      border: 0;
+    }
+
+    /*bbroygbgws-pp*/
+    .black-ish:before{background-color: black;}
+    .brown-ish:before{background-color: brown;}
+
+    .red-ish:before{background-color: red;}
+    .orange-ish:before{background-color: orange;}
+    .yellow-ish:before{background-color: yellow;}
+
+    .green-ish:before{background-color: green;}
+    .blue-ish:before{background-color: blue;}
+    
+    
+    .grey-ish:before{background-color: grey;}
+    .white-ish:before{background-color: white;}
+    .silver-ish:before{background-color: silver;}
+
+    .pink-ish:before{background-color: pink;}
+    .purple-ish:before{background-color: purple;}
+    
+    body{
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+      user-select: none;
+      transition: background-color 1s ease-out;
+    }
+    html{
+      height: 100%;
+    }
+    .loading {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      margin: 1em auto;
+    }
+    .disabled{
+      pointer-events: none;
+      opacity: 0;
+      transition: 1s ease;
+    }
+
+    </style>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  </head>
+  <body>
+      <div id="root">
+        <div class="loading" style="display:none;">
+          <img src="loading.svg" alt="Loading...">
+        </div>
+      </div>
+  </body>
+</html>
